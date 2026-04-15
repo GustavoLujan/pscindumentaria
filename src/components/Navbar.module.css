@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #A01F22; /* Rojo PSC directo para evitar fallos de carga */
+  background-color: #A01F22;
   height: 110px;
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1400px; /* Evita que los links se vayan muy lejos en pantallas ultra anchas */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -27,10 +27,9 @@
 }
 
 .logo {
-  height: 85px;
+  height: 75px;
   width: auto;
   transition: height 0.3s ease;
-  /* Opcional: un borde sutil para que el logo destaque */
   border: 1.5px solid rgba(255, 255, 255, 0.8);
   border-radius: 4px;
 }
@@ -44,7 +43,7 @@
 }
 
 .link {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
@@ -57,34 +56,45 @@
   color: #cccccc;
 }
 
-/* --- RESPONSIVE --- */
-
-/* TABLETS */
 @media (max-width: 992px) {
-  .navbar { height: 90px; }
-  .logo { height: 70px; }
-  .navLinks { gap: 1.5rem; }
-  .link { font-size: 0.95rem; }
+  .navbar {
+    height: 90px;
+  }
+  .logo {
+    height: 65px;
+  }
+  .navLinks {
+    gap: 1.5rem;
+  }
+  .link {
+    font-size: 0.95rem;
+  }
 }
 
-/* CELULARES (Mantenemos el formato horizontal para que no se desarme) */
 @media (max-width: 768px) {
-  .navbar { height: 80px; }
-  .container { padding: 0 1rem; }
-  .logo { height: 60px; }
-  
-  .navLinks { 
-    gap: 0.8rem; 
+  .navbar {
+    height: 80px;
   }
-  
-  .link { 
-    font-size: 0.7rem; /* Texto más chico para que entre todo en una línea */
+  .container {
+    padding: 0 1rem;
+  }
+  .logo {
+    height: 55px;
+  }
+  .navLinks {
+    gap: 0.8rem;
+  }
+  .link {
+    font-size: 0.7rem;
     letter-spacing: 0.5px;
   }
 }
 
-/* CELULARES MUY PEQUEÑOS (Evitamos el salto de línea) */
 @media (max-width: 400px) {
-  .navLinks { gap: 0.5rem; }
-  .link { font-size: 0.65rem; }
+  .navLinks {
+    gap: 0.5rem;
+  }
+  .link {
+    font-size: 0.65rem;
+  }
 }

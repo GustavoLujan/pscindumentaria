@@ -1,7 +1,6 @@
-/* src/components/Contacto.module.css */
 .contacto {
-  padding: 4rem 2rem 0rem 2rem; /* Eliminamos el padding inferior */
-  background-color: #fff;
+  padding: 4rem 2rem 0;
+  background-color: #ffffff;
   scroll-margin-top: 110px;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,7 @@
 }
 
 .heading {
-  color: var(--primary-color);
+  color: #A01F22;
   font-size: 3.5rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -26,7 +25,7 @@
 .text {
   font-size: 1.4rem;
   margin-bottom: 2.5rem;
-  color: #333;
+  color: #333333;
 }
 
 .buttonContainer {
@@ -34,7 +33,7 @@
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  margin-bottom: 3rem; /* Espacio antes de que empiece el footer */
+  margin-bottom: 3rem;
 }
 
 .whatsappButton, .instagramButton {
@@ -53,12 +52,12 @@
 
 .whatsappButton {
   background-color: #25D366;
-  color: white;
+  color: #ffffff;
 }
 
 .instagramButton {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  color: white;
+  color: #ffffff;
 }
 
 .whatsappButton:hover, .instagramButton:hover {
@@ -67,6 +66,18 @@
 }
 
 @media (max-width: 768px) {
-  .heading { font-size: 2.5rem; }
-  .buttonContainer { flex-direction: column; align-items: center; }
+  .contacto {
+    padding-top: 2rem;
+    scroll-margin-top: 90px;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 1.1rem;
+  }
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
