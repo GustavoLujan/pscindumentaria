@@ -1,0 +1,52 @@
+.navbar {
+  background-color: var(--primary-color);
+  height: 110px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: height 0.3s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* TABLET Y CELULAR */
+@media (max-width: 992px) {
+  .navbar { height: 90px; }
+  .logo { height: 70px; }
+  .navLinks { gap: 1rem; }
+  .link { font-size: 0.9rem; }
+}
+
+@media (max-width: 600px) {
+  .container { flex-direction: column; padding: 10px; }
+  .navbar { height: auto; }
+  .navLinks { margin-top: 10px; gap: 0.8rem; }
+}

@@ -1,0 +1,53 @@
+/* src/components/Footer.module.css */
+.footer {
+  background-color: #111; /* Color oscuro como se ve en tu captura */
+  color: #fff;
+  padding: 0; /* Quitamos padding para que la imagen maneje el espacio */
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imageWrapper {
+  width: 100%;
+  background-color: #fff; /* Fondo blanco para que los logos de clientes resalten */
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.footerImage {
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+.info {
+  background-color: #A01F22;
+  padding: 2rem 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.copy {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.brand {
+  color: #ffffff; /* El rojo de tu marca */
+  font-weight: 900;
+}
+
+.details {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}

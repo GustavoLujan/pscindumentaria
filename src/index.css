@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #A01F22;
+  --secondary-color: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  background-color: #000; /* Fondo base oscuro */
+}
+
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+}

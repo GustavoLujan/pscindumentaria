@@ -1,0 +1,131 @@
+/* src/components/Servicios.module.css */
+.servicios {
+  padding: 8rem 2rem;
+  background-color: #f4f4f4;
+  scroll-margin-top: 110px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.heading {
+  color: var(--primary-color);
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.zoomOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(160, 31, 34, 0.7); /* Rojo PSC con transparencia */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.card:hover .zoomOverlay {
+  opacity: 1;
+}
+
+.cardContent {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* ESTILOS DEL MODAL */
+.modal {
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .heading { font-size: 2.5rem; }
+  .modalContent { max-width: 95%; }
+  .close { right: 20px; top: 10px; }
+}
