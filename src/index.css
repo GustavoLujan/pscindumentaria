@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
 :root {
   --primary-color: #A01F22;
   --secondary-color: #FFFFFF;
+  --bg-dark: #121212; /* Un negro más suave y profesional */
 }
 
 * {
@@ -11,15 +14,35 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  overflow-x: hidden; 
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
   overflow-x: hidden;
-  background-color: #000; /* Fondo base oscuro */
+  background-color: var(--bg-dark);
+  color: var(--secondary-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1.2;
 }
 
 @media (max-width: 768px) {
-  html { font-size: 14px; }
+  html { 
+    font-size: 14px; 
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }

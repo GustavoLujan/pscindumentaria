@@ -1,5 +1,5 @@
 .navbar {
-  background-color: var(--primary-color);
+  background-color: #A01F22; /* Rojo PSC directo para evitar fallos de carga */
   height: 110px;
   position: fixed;
   top: 0;
@@ -7,7 +7,8 @@
   z-index: 1000;
   display: flex;
   align-items: center;
-  transition: height 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -15,18 +16,31 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1400px; /* Evita que los links se vayan muy lejos en pantallas ultra anchas */
+  margin: 0 auto;
   padding: 0 5%;
 }
 
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  height: 90px;
+  height: 85px;
   width: auto;
+  transition: height 0.3s ease;
+  /* Opcional: un borde sutil para que el logo destaque */
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
 }
 
 .navLinks {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -34,19 +48,43 @@
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
-/* TABLET Y CELULAR */
+.link:hover {
+  color: #cccccc;
+}
+
+/* --- RESPONSIVE --- */
+
+/* TABLETS */
 @media (max-width: 992px) {
   .navbar { height: 90px; }
   .logo { height: 70px; }
-  .navLinks { gap: 1rem; }
-  .link { font-size: 0.9rem; }
+  .navLinks { gap: 1.5rem; }
+  .link { font-size: 0.95rem; }
 }
 
-@media (max-width: 600px) {
-  .container { flex-direction: column; padding: 10px; }
-  .navbar { height: auto; }
-  .navLinks { margin-top: 10px; gap: 0.8rem; }
+/* CELULARES (Mantenemos el formato horizontal para que no se desarme) */
+@media (max-width: 768px) {
+  .navbar { height: 80px; }
+  .container { padding: 0 1rem; }
+  .logo { height: 60px; }
+  
+  .navLinks { 
+    gap: 0.8rem; 
+  }
+  
+  .link { 
+    font-size: 0.7rem; /* Texto más chico para que entre todo en una línea */
+    letter-spacing: 0.5px;
+  }
+}
+
+/* CELULARES MUY PEQUEÑOS (Evitamos el salto de línea) */
+@media (max-width: 400px) {
+  .navLinks { gap: 0.5rem; }
+  .link { font-size: 0.65rem; }
 }
