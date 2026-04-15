@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './Hero.module.css';
 import heroBg from '../images/hero.avif'; 
-import logo from './images/Logo.jpeg'; 
+import logo from '../images/Logo.jpeg'; 
 
 const Hero = () => {
   return (

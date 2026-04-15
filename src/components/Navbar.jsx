@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 import styles from './Navbar.module.css';
-import logo from './images/Logo.jpeg'; 
+import logo from '../images/Logo.jpeg'; 
 
 const Navbar = () => {
   return (

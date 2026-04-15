@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import React from 'react';
 import styles from './Footer.module.css';
-import clientesImg from './images/footer.png'; 
+import clientesImg from '../images/footer.png'; 
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* Esta es la parte que falta en tu captura */}
         <div className={styles.imageWrapper}>
           <img 
             src={clientesImg} 

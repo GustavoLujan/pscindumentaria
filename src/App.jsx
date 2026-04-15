@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Nosotros from './components/Nosotros';
@@ -14,7 +14,6 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        {/* Usamos Routes solo para estructurar la Single Page Application */}
         <Routes>
           <Route path="/" element={
             <main>
