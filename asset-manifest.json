@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pscindumentaria/static/css/main.37758cdc.css",
+    "main.css": "/pscindumentaria/static/css/main.60b5a380.css",
     "main.js": "/pscindumentaria/static/js/main.13e8fe6b.js",
     "static/js/453.0743d2c5.chunk.js": "/pscindumentaria/static/js/453.0743d2c5.chunk.js",
     "static/media/footer.png": "/pscindumentaria/static/media/footer.b58b94412b7b1b04bb3e.png",
@@ -16,12 +16,12 @@
     "static/media/polarbordado.jpeg": "/pscindumentaria/static/media/polarbordado.407057b2f69666e4573c.jpeg",
     "static/media/hero.avif": "/pscindumentaria/static/media/hero.9de3f9772c7b5fc0506e.avif",
     "index.html": "/pscindumentaria/index.html",
-    "main.37758cdc.css.map": "/pscindumentaria/static/css/main.37758cdc.css.map",
+    "main.60b5a380.css.map": "/pscindumentaria/static/css/main.60b5a380.css.map",
     "main.13e8fe6b.js.map": "/pscindumentaria/static/js/main.13e8fe6b.js.map",
     "453.0743d2c5.chunk.js.map": "/pscindumentaria/static/js/453.0743d2c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37758cdc.css",
+    "static/css/main.60b5a380.css",
     "static/js/main.13e8fe6b.js"
   ]
 }
