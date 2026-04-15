@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import styles from './Servicios.module.css';
 
 // Importación de las imágenes principales
-import jersey from '../images/jersey.jpeg';
-import gorras from '../images/Gorras1.jpeg';
-import polar from '../images/polarbordado.jpeg';
-import futbol from '../images/futbol.jpeg';
-import molderia from '../images/molderiamujer.jpeg';
-import buzo from '../images/buzofrizainvisible.jpeg';
-import bordado from '../images/bordado.jpeg';
-import dtf from '../images/dtf.jpeg';
-import serigrafia from '../images/serigrafia.jpeg';
+import jersey from './images/jersey.jpeg';
+import gorras from './images/Gorras1.jpeg';
+import polar from './images/polarbordado.jpeg';
+import futbol from './images/futbol.jpeg';
+import molderia from './images/molderiamujer.jpeg';
+import buzo from './images/buzofrizainvisible.jpeg';
+import bordado from './images/bordado.jpeg';
+import dtf from './images/dtf.jpeg';
+import serigrafia from './images/serigrafia.jpeg';
 
 const listaServicios = [
   { id: 1, title: "Remeras de Jersey 24.1", img: jersey, desc: "Calidad premium en algodón jersey." },

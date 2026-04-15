@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import React from 'react';
 import styles from './Footer.module.css';
-import clientesImg from '../images/footer.png'; // Verifica que el nombre sea exacto
+import clientesImg from './images/footer.png'; 
 
 const Footer = () => {
   const year = new Date().getFullYear();
