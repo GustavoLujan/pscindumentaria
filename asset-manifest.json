@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/git@github.com:GustavoLujan/pscindumentaria.git/static/css/main.9077648b.css",
+    "main.js": "/git@github.com:GustavoLujan/pscindumentaria.git/static/js/main.5d44c992.js",
+    "static/js/453.0743d2c5.chunk.js": "/git@github.com:GustavoLujan/pscindumentaria.git/static/js/453.0743d2c5.chunk.js",
+    "static/media/footer.png": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/footer.b58b94412b7b1b04bb3e.png",
+    "static/media/futbol.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/futbol.8a659e868281e06503ec.jpeg",
+    "static/media/dtf.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/dtf.370d8bf0b0bd68aec8c8.jpeg",
+    "static/media/bordado.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/bordado.85194e26ba9a9e27d2ab.jpeg",
+    "static/media/Gorras1.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/Gorras1.aa6acddf9d345201009e.jpeg",
+    "static/media/serigrafia.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/serigrafia.312adc08e2332f82d198.jpeg",
+    "static/media/jersey.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/jersey.c14968551e4c197593fb.jpeg",
+    "static/media/molderiamujer.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/molderiamujer.abab4eb43201f1c6c13d.jpeg",
+    "static/media/Logo.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/Logo.a335b728a215d2dda83e.jpeg",
+    "static/media/buzofrizainvisible.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/buzofrizainvisible.74a283a81c2a0fb038b9.jpeg",
+    "static/media/polarbordado.jpeg": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/polarbordado.407057b2f69666e4573c.jpeg",
+    "static/media/hero.avif": "/git@github.com:GustavoLujan/pscindumentaria.git/static/media/hero.9de3f9772c7b5fc0506e.avif",
+    "index.html": "/git@github.com:GustavoLujan/pscindumentaria.git/index.html",
+    "main.9077648b.css.map": "/git@github.com:GustavoLujan/pscindumentaria.git/static/css/main.9077648b.css.map",
+    "main.5d44c992.js.map": "/git@github.com:GustavoLujan/pscindumentaria.git/static/js/main.5d44c992.js.map",
+    "453.0743d2c5.chunk.js.map": "/git@github.com:GustavoLujan/pscindumentaria.git/static/js/453.0743d2c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9077648b.css",
+    "static/js/main.5d44c992.js"
+  ]
+}
