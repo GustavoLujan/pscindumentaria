@@ -15,7 +15,7 @@ const Contacto = () => {
           <div className={styles.buttonContainer}>
             {/* Botón de WhatsApp */}
             <a 
-              href="https://wa.me/5491138495505" 
+              href="https://wa.me/5491165535192" 
               className={styles.whatsappButton} 
               target="_blank" 
               rel="noopener noreferrer"
