@@ -1,34 +1,35 @@
 .servicios {
-  padding: 8rem 2rem;
-  background-color: #f4f4f4;
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
   scroll-margin-top: 110px;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .heading {
   color: #A01F22;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
 .card {
   background-color: #ffffff;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   transition: transform 0.3s ease;
   display: flex;
@@ -42,7 +43,7 @@
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -67,6 +68,7 @@
   color: #ffffff;
   font-weight: 800;
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .card:hover .zoomOverlay {
@@ -74,15 +76,16 @@
 }
 
 .cardContent {
-  padding: 2rem;
+  padding: 1.2rem;
   text-align: center;
 }
 
 .cardTitle {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
+  margin: 0;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .modal {
@@ -92,57 +95,39 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: zoom-out;
-  animation: fadeIn 0.3s ease;
 }
 
 .modalContent {
   max-width: 90%;
   max-height: 85%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 .close {
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 20px;
+  right: 30px;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   cursor: pointer;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 @media (max-width: 768px) {
   .servicios {
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem;
     scroll-margin-top: 80px;
   }
-  .heading {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
   }
   .imageWrapper {
-    height: 250px;
-  }
-  .modalContent {
-    max-width: 95%;
-  }
-  .close {
-    right: 20px;
-    top: 10px;
+    height: 220px;
   }
 }

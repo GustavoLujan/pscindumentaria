@@ -3,7 +3,7 @@
 :root {
   --primary-color: #A01F22;
   --secondary-color: #FFFFFF;
-  --bg-dark: #121212; /* Un negro más suave y profesional */
+  --bg-dark: #121212;
 }
 
 * {
@@ -14,16 +14,25 @@
 
 html {
   scroll-behavior: smooth;
+  /* Cambio 1: Forzamos el ancho máximo para evitar que Chrome estire el layout */
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden; 
 }
 
 body {
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  /* Cambio 2: Evitamos que el body crezca más que la pantalla */
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
   background-color: var(--bg-dark);
   color: var(--secondary-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Cambio 3: Estabilizamos el tamaño de fuente base */
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 ::selection {
@@ -33,7 +42,7 @@ body {
 
 h1, h2, h3 {
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.1; /* Reducido ligeramente para evitar bloques gigantes */
 }
 
 @media (max-width: 768px) {
@@ -44,5 +53,6 @@ h1, h2, h3 {
 
 img {
   max-width: 100%;
+  height: auto; /* Asegura que la proporción se mantenga siempre */
   display: block;
 }

@@ -15,14 +15,23 @@
 .imageWrapper {
   width: 100%;
   background-color: #ffffff;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem;
   display: flex;
-  justify-content: center;
-  margin-bottom: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empresasHeading {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #222222;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footerImage {
-  max-width: 1200px;
+  max-width: 800px;
   width: 90%;
   height: auto;
   object-fit: contain;
@@ -30,13 +39,13 @@
 
 .info {
   background-color: #A01F22;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   width: 100%;
   text-align: center;
 }
 
 .copy {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin: 0;
   font-weight: 700;
 }
@@ -47,19 +56,13 @@
 }
 
 .details {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-top: 0.4rem;
 }
 
 @media (max-width: 768px) {
-  .copy {
-    font-size: 0.9rem;
-  }
-  .details {
-    font-size: 0.8rem;
-  }
   .imageWrapper {
-    padding: 1.5rem 0;
+    padding: 0.5rem 0 1.5rem;
   }
 }

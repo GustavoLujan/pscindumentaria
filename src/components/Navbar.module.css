@@ -1,14 +1,16 @@
 .navbar {
   background-color: #A01F22;
-  height: 110px;
+  height: 80px;
   position: fixed;
   top: 0;
+  left: 0; /* Asegura que empiece desde el borde izquierdo */
   width: 100%;
   z-index: 1000;
   display: flex;
   align-items: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  /* Forzamos que no haya sombras ni bordes */
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .container {
@@ -16,27 +18,28 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 5%;
+  max-width: 100%; /* Ocupa todo el ancho */
+  margin: 0;
+  padding: 0 20px; /* Un pequeño aire para que el logo no toque el borde físico */
 }
 
 .logoContainer {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Logo a la izquierda */
 }
 
 .logo {
-  height: 75px;
+  height: 55px; /* Un poco más pequeña para que no se vea apretada */
   width: auto;
-  transition: height 0.3s ease;
-  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  background-color: #ffffff;
+  padding: 4px;
   border-radius: 4px;
 }
 
 .navLinks {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -47,52 +50,22 @@
   text-decoration: none;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
-}
-
-.link:hover {
-  color: #cccccc;
-}
-
-@media (max-width: 992px) {
-  .navbar {
-    height: 90px;
-  }
-  .logo {
-    height: 65px;
-  }
-  .navLinks {
-    gap: 1.5rem;
-  }
-  .link {
-    font-size: 0.95rem;
-  }
+  font-size: 0.8rem; /* Letras más chicas y armónicas */
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {
   .navbar {
-    height: 80px;
+    height: 70px;
   }
   .container {
-    padding: 0 1rem;
+    padding: 0 10px;
   }
   .logo {
-    height: 55px;
+    height: 45px;
   }
   .navLinks {
     gap: 0.8rem;
-  }
-  .link {
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
-  }
-}
-
-@media (max-width: 400px) {
-  .navLinks {
-    gap: 0.5rem;
   }
   .link {
     font-size: 0.65rem;

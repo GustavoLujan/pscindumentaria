@@ -1,7 +1,7 @@
 .hero {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 80px);
   width: 100%;
-  margin-top: 110px;
+  margin-top: 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  scroll-margin-top: 110px;
+  scroll-margin-top: 80px;
 }
 
 .overlay {
@@ -33,9 +33,9 @@
 }
 
 .heroLogoContainer {
-  margin-bottom: 2rem;
-  width: 90%;
-  max-width: 450px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   justify-content: center;
   transition: all 0.3s ease;
@@ -45,23 +45,23 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0px 8px 15px rgba(0,0,0,0.4));
+  filter: drop-shadow(0px 6px 12px rgba(0,0,0,0.3));
 }
 
 .title {
-  font-size: clamp(2rem, 8vw, 5rem);
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
   font-weight: 900;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
   line-height: 1.1;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
 }
 
 .line {
-  width: 180px;
-  height: 8px;
+  width: 120px;
+  height: 5px;
   background-color: #A01F22;
   margin-top: 20px;
   border-radius: 4px;
@@ -69,31 +69,34 @@
 
 @media (max-width: 1024px) {
   .heroLogoContainer {
-    max-width: 350px;
+    max-width: 320px;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 75vh;
-    margin-top: 80px;
-    scroll-margin-top: 80px;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    scroll-margin-top: 70px;
   }
   .heroLogoContainer {
     max-width: 220px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .title {
+    font-size: 1.6rem;
   }
   .line {
-    width: 100px;
-    height: 5px;
+    width: 80px;
+    height: 4px;
   }
 }
 
 @media (max-width: 480px) {
   .heroLogoContainer {
-    max-width: 200px;
+    max-width: 180px;
   }
   .title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }

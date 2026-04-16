@@ -1,6 +1,6 @@
 .nosotros {
-  min-height: 100vh;
-  padding: 8rem 2rem;
+  min-height: 85vh;
+  padding: 4rem 2rem 5rem;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -16,70 +16,57 @@
 
 .heading {
   color: #A01F22;
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .text {
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: #333333;
-  max-width: 950px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .divider {
-  width: 120px;
-  height: 6px;
+  width: 90px;
+  height: 5px;
   background-color: #A01F22;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   border-radius: 10px;
 }
 
 .highlightText {
-  font-size: 2.5rem;
-  line-height: 1.3;
+  font-size: 1.6rem;
+  line-height: 1.4;
   color: #A01F22;
   font-weight: 800;
   font-style: italic;
-  max-width: 1000px;
+  max-width: 850px;
   margin: 0 auto;
-}
-
-@media (max-width: 1024px) {
-  .text {
-    font-size: 1.8rem;
-  }
-  .highlightText {
-    font-size: 2.1rem;
-  }
 }
 
 @media (max-width: 768px) {
   .nosotros {
-    padding: 4rem 1.5rem;
+    padding: 3rem 1.5rem 4rem;
     scroll-margin-top: 80px;
   }
   .heading {
-    font-size: 2.8rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   .text {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .highlightText {
-    font-size: 1.6rem;
-  }
-  .divider {
-    width: 80px;
-    height: 4px;
+    font-size: 1.3rem;
   }
 }
