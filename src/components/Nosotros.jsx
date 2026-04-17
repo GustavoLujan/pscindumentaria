@@ -12,7 +12,7 @@ const Nosotros = () => {
           </p>
           <div className={styles.divider}></div>
           <p className={styles.highlightText}>
-            Lo más importante para que una empresa crezca es la publicidad y la imagen, por eso queremos verlos crecer y crecer a su lado.
+            Sabemos que la imagen es el motor del crecimiento. Por eso, nuestro compromiso es potenciar la identidad de tu marca para que sigamos creciendo juntos.
           </p>
         </div>
       </div>
