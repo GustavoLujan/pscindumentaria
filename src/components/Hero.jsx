@@ -1,4 +1,3 @@
-// components/Hero.jsx
 import React from 'react';
 import styles from './Hero.module.css';
 import heroBg from '../images/hero.avif'; 

@@ -1,5 +1,4 @@
 import React from 'react';
-/* Cambiamos NavHashLink por HashLink para evitar que inyecte isActive */
 import { HashLink as Link } from 'react-router-hash-link';
 import styles from './Navbar.module.css';
 import logo from '../images/Logo.jpeg'; 

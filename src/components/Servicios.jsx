@@ -1,4 +1,3 @@
-// src/components/Servicios.jsx
 import React, { useState } from 'react';
 import styles from './Servicios.module.css';
 
